@@ -1,0 +1,8 @@
+# Local slicer and temporary files
+*.gcode
+*.bgcode
+*.tmp
+*.bak
+*.autosave
+Thumbs.db
+.DS_Store

@@ -1,0 +1,74 @@
+<div id="archive-assembly">
+  <div class="viz-controls" aria-label="Diagram view">
+    <button class="btn btn-primary" type="button" data-view="exploded" aria-pressed="true">Exploded view</button>
+    <button class="btn" type="button" data-view="closed" aria-pressed="false">Closed</button>
+    <button class="btn" type="button" data-view="open" aria-pressed="false">Drawer open</button>
+  </div>
+  <svg viewBox="0 0 736 500" role="img" aria-labelledby="am-title am-desc">
+    <title id="am-title">Archive Module 3030 assembly diagram</title>
+    <desc id="am-desc">Selectable exploded, closed, and open views showing the chassis, lid, armor, yellow timeline, screws, drawer, magnets, and red reveal plate.</desc>
+    <defs>
+      <marker id="am-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="currentColor"/></marker>
+    </defs>
+    <g class="part chassis"><path d="M130 338 L450 338 L570 290 L250 290 Z L250 385 L570 337 L570 290 M130 338 L130 385 L250 433 L250 385"/><text x="132" y="455">1 · BLACK CHASSIS</text></g>
+    <g class="part lid"><path d="M130 270 L450 270 L570 222 L250 222 Z"/><text x="132" y="260">2 · BLACK LID</text></g>
+    <g class="part armor"><path d="M148 202 L440 202 L550 158 L258 158 Z"/><text x="150" y="190">3 · IRON-GRAY ARMOR</text></g>
+    <g class="part yellow"><path d="M168 142 L235 142 L300 142 L365 142 L430 142 L530 177"/><circle cx="235" cy="142" r="11"/><circle cx="300" cy="142" r="11"/><circle cx="365" cy="142" r="11"/><circle cx="430" cy="142" r="11"/><circle cx="530" cy="177" r="14"/><text x="170" y="119">4 · YELLOW PETG TIMELINE</text></g>
+    <g class="part screws"><circle cx="235" cy="81" r="7"/><circle cx="300" cy="81" r="7"/><circle cx="365" cy="81" r="7"/><circle cx="430" cy="81" r="7"/><path d="M235 90V134M300 90V134M365 90V134M430 90V134"/><text x="230" y="57">5 · FOUR M2 × 8 SCREWS</text></g>
+    <g class="part drawer"><path d="M464 353 L641 326 L689 345 L512 374 Z L512 410 L689 381 L689 345"/><text x="510" y="431">6 · GRAY DRAWER</text></g>
+    <g class="part reveal"><path d="M500 315 L626 296 L658 307 L532 327 Z"/><text x="538" y="290">7 · RED REVEAL</text></g>
+    <g class="part magnets"><circle cx="470" cy="366" r="8"/><circle cx="482" cy="366" r="8"/><path d="M482 366H520"/><text x="431" y="348">MAGNET PAIR</text></g>
+    <g class="notes">
+      <path d="M83 369H122"/><text x="14" y="373">thumb access</text>
+      <path d="M541 181L574 199"/><text x="578" y="206">open fifth ring</text>
+    </g>
+  </svg>
+  <div class="text-small text-muted" id="assembly-caption">Stack the lid, gray armor, and yellow timeline on the chassis. The four screws pass through all three layers into the chassis bosses. The drawer enters from the right.</div>
+</div>
+<style>
+  #archive-assembly{color:var(--foreground);width:100%;}
+  #archive-assembly .viz-controls{margin-bottom:12px;}
+  #archive-assembly svg{width:100%;height:auto;display:block;overflow:visible;}
+  #archive-assembly .part path,#archive-assembly .part circle{fill:color-mix(in srgb,var(--card) 86%,transparent);stroke:currentColor;stroke-width:2;vector-effect:non-scaling-stroke;}
+  #archive-assembly .part text,#archive-assembly .notes text{fill:var(--foreground);font-family:system-ui,sans-serif;font-size:12px;font-weight:500;}
+  #archive-assembly .yellow{color:var(--viz-series-1);}
+  #archive-assembly .yellow path{fill:none;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;}
+  #archive-assembly .yellow circle{fill:color-mix(in srgb,var(--viz-series-1) 22%,var(--card));stroke-width:6;}
+  #archive-assembly .reveal{color:var(--viz-series-2);}
+  #archive-assembly .armor,#archive-assembly .drawer{color:var(--muted-foreground);}
+  #archive-assembly .chassis,#archive-assembly .lid{color:var(--foreground);}
+  #archive-assembly .screws path,#archive-assembly .notes path{fill:none;stroke:var(--muted-foreground);stroke-width:1.5;marker-end:url(#am-arrow);}
+  #archive-assembly .screws circle{fill:var(--muted-foreground);}
+  #archive-assembly .notes path{marker-end:none;}
+  #archive-assembly #assembly-caption{margin-top:8px;}
+  #archive-assembly[data-view="closed"] .drawer{transform:translate(-92px,-18px);}
+  #archive-assembly[data-view="closed"] .reveal{transform:translate(-92px,32px);opacity:0;}
+  #archive-assembly[data-view="closed"] .magnets{opacity:0;}
+  #archive-assembly[data-view="closed"] .lid{transform:translate(0,67px);}
+  #archive-assembly[data-view="closed"] .armor{transform:translate(0,111px);}
+  #archive-assembly[data-view="closed"] .yellow{transform:translate(0,151px);}
+  #archive-assembly[data-view="closed"] .screws{transform:translate(0,212px);}
+  #archive-assembly[data-view="open"] .lid{transform:translate(0,67px);}
+  #archive-assembly[data-view="open"] .armor{transform:translate(0,111px);}
+  #archive-assembly[data-view="open"] .yellow{transform:translate(0,151px);}
+  #archive-assembly[data-view="open"] .screws{transform:translate(0,212px);}
+  #archive-assembly[data-view="open"] .reveal{transform:translate(0,48px);}
+  #archive-assembly .part{transition:transform .28s ease,opacity .2s ease;}
+  @media (prefers-reduced-motion:reduce){#archive-assembly .part{transition:none;}}
+</style>
+<script>
+  (()=>{
+    const root=document.getElementById('archive-assembly');
+    const caption=document.getElementById('assembly-caption');
+    const captions={
+      exploded:'Stack the lid, gray armor, and yellow timeline on the chassis. The four screws pass through all three layers into the chassis bosses. The drawer enters from the right.',
+      closed:'Closed: the drawer sits flush inside the black chassis. Only the exterior armor, yellow timeline, four completed-event screws, and open fifth ring are visible.',
+      open:'Open: pull from the hidden underside thumb scallop. The magnetic pair provides the closed detent; the red message plate and folded transmission are revealed.'
+    };
+    root.dataset.view='exploded';
+    root.querySelectorAll('button[data-view]').forEach(button=>button.addEventListener('click',()=>{
+      const view=button.dataset.view; root.dataset.view=view; caption.textContent=captions[view];
+      root.querySelectorAll('button[data-view]').forEach(b=>{const on=b===button;b.setAttribute('aria-pressed',String(on));b.classList.toggle('btn-primary',on);});
+    }));
+  })();
+</script>
