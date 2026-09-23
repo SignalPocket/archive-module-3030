@@ -1,0 +1,338 @@
+solid reveal_plate_red.stl
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 0
+   vertex 100 52 0
+   vertex 100 0 0
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 0
+   vertex 0 52 0
+   vertex 100 52 0
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 2
+   vertex 100 0 2
+   vertex 100 52 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 2
+   vertex 100 52 2
+   vertex 0 52 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 0
+   vertex 100 0 0
+   vertex 100 0 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 0
+   vertex 100 0 2
+   vertex 0 0 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 100 0 0
+   vertex 100 52 0
+   vertex 100 52 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 100 0 0
+   vertex 100 52 2
+   vertex 100 0 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 100 52 0
+   vertex 0 52 0
+   vertex 0 52 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 100 52 0
+   vertex 0 52 2
+   vertex 100 52 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 52 0
+   vertex 0 0 0
+   vertex 0 0 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 52 0
+   vertex 0 0 2
+   vertex 0 52 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 5 2
+   vertex 96 9 2
+   vertex 96 5 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 5 2
+   vertex 4 9 2
+   vertex 96 9 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 5 2.8
+   vertex 96 5 2.8
+   vertex 96 9 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 5 2.8
+   vertex 96 9 2.8
+   vertex 4 9 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 5 2
+   vertex 96 5 2
+   vertex 96 5 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 5 2
+   vertex 96 5 2.8
+   vertex 4 5 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 96 5 2
+   vertex 96 9 2
+   vertex 96 9 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 96 5 2
+   vertex 96 9 2.8
+   vertex 96 5 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 96 9 2
+   vertex 4 9 2
+   vertex 4 9 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 96 9 2
+   vertex 4 9 2.8
+   vertex 96 9 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 9 2
+   vertex 4 5 2
+   vertex 4 5 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 9 2
+   vertex 4 5 2.8
+   vertex 4 9 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 14 2
+   vertex 96 18 2
+   vertex 96 14 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 14 2
+   vertex 4 18 2
+   vertex 96 18 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 14 2.8
+   vertex 96 14 2.8
+   vertex 96 18 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 14 2.8
+   vertex 96 18 2.8
+   vertex 4 18 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 14 2
+   vertex 96 14 2
+   vertex 96 14 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 14 2
+   vertex 96 14 2.8
+   vertex 4 14 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 96 14 2
+   vertex 96 18 2
+   vertex 96 18 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 96 14 2
+   vertex 96 18 2.8
+   vertex 96 14 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 96 18 2
+   vertex 4 18 2
+   vertex 4 18 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 96 18 2
+   vertex 4 18 2.8
+   vertex 96 18 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 18 2
+   vertex 4 14 2
+   vertex 4 14 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4 18 2
+   vertex 4 14 2.8
+   vertex 4 18 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 20 23 2
+   vertex 80 28 2
+   vertex 80 23 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 20 23 2
+   vertex 20 28 2
+   vertex 80 28 2
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 20 23 2.8
+   vertex 80 23 2.8
+   vertex 80 28 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 20 23 2.8
+   vertex 80 28 2.8
+   vertex 20 28 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 20 23 2
+   vertex 80 23 2
+   vertex 80 23 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 20 23 2
+   vertex 80 23 2.8
+   vertex 20 23 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 80 23 2
+   vertex 80 28 2
+   vertex 80 28 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 80 23 2
+   vertex 80 28 2.8
+   vertex 80 23 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 80 28 2
+   vertex 20 28 2
+   vertex 20 28 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 80 28 2
+   vertex 20 28 2.8
+   vertex 80 28 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 20 28 2
+   vertex 20 23 2
+   vertex 20 23 2.8
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 20 28 2
+   vertex 20 23 2.8
+   vertex 20 28 2.8
+  endloop
+ endfacet
+endsolid reveal_plate_red.stl

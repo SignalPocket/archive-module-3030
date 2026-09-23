@@ -1,0 +1,338 @@
+solid cable_clip_flex_test.stl
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 0.00000
+   vertex 34.00000 8.00000 0.00000
+   vertex 34.00000 0.00000 0.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 0.00000
+   vertex 0.00000 8.00000 0.00000
+   vertex 34.00000 8.00000 0.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 3.00000
+   vertex 34.00000 0.00000 3.00000
+   vertex 34.00000 8.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 3.00000
+   vertex 34.00000 8.00000 3.00000
+   vertex 0.00000 8.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 0.00000
+   vertex 34.00000 0.00000 0.00000
+   vertex 34.00000 0.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 0.00000
+   vertex 34.00000 0.00000 3.00000
+   vertex 0.00000 0.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34.00000 0.00000 0.00000
+   vertex 34.00000 8.00000 0.00000
+   vertex 34.00000 8.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34.00000 0.00000 0.00000
+   vertex 34.00000 8.00000 3.00000
+   vertex 34.00000 0.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34.00000 8.00000 0.00000
+   vertex 0.00000 8.00000 0.00000
+   vertex 0.00000 8.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34.00000 8.00000 0.00000
+   vertex 0.00000 8.00000 3.00000
+   vertex 34.00000 8.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 8.00000 0.00000
+   vertex 0.00000 0.00000 0.00000
+   vertex 0.00000 0.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 8.00000 0.00000
+   vertex 0.00000 0.00000 3.00000
+   vertex 0.00000 8.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27.00000 -1.00000 0.00000
+   vertex 34.00000 9.00000 0.00000
+   vertex 34.00000 -1.00000 0.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27.00000 -1.00000 0.00000
+   vertex 27.00000 9.00000 0.00000
+   vertex 34.00000 9.00000 0.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27.00000 -1.00000 6.00000
+   vertex 34.00000 -1.00000 6.00000
+   vertex 34.00000 9.00000 6.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27.00000 -1.00000 6.00000
+   vertex 34.00000 9.00000 6.00000
+   vertex 27.00000 9.00000 6.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27.00000 -1.00000 0.00000
+   vertex 34.00000 -1.00000 0.00000
+   vertex 34.00000 -1.00000 6.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27.00000 -1.00000 0.00000
+   vertex 34.00000 -1.00000 6.00000
+   vertex 27.00000 -1.00000 6.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34.00000 -1.00000 0.00000
+   vertex 34.00000 9.00000 0.00000
+   vertex 34.00000 9.00000 6.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34.00000 -1.00000 0.00000
+   vertex 34.00000 9.00000 6.00000
+   vertex 34.00000 -1.00000 6.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34.00000 9.00000 0.00000
+   vertex 27.00000 9.00000 0.00000
+   vertex 27.00000 9.00000 6.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34.00000 9.00000 0.00000
+   vertex 27.00000 9.00000 6.00000
+   vertex 34.00000 9.00000 6.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27.00000 9.00000 0.00000
+   vertex 27.00000 -1.00000 0.00000
+   vertex 27.00000 -1.00000 6.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27.00000 9.00000 0.00000
+   vertex 27.00000 -1.00000 6.00000
+   vertex 27.00000 9.00000 6.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24.00000 1.00000 3.00000
+   vertex 29.00000 7.00000 3.00000
+   vertex 29.00000 1.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24.00000 1.00000 3.00000
+   vertex 24.00000 7.00000 3.00000
+   vertex 29.00000 7.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24.00000 1.00000 5.00000
+   vertex 29.00000 1.00000 5.00000
+   vertex 29.00000 7.00000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24.00000 1.00000 5.00000
+   vertex 29.00000 7.00000 5.00000
+   vertex 24.00000 7.00000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24.00000 1.00000 3.00000
+   vertex 29.00000 1.00000 3.00000
+   vertex 29.00000 1.00000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24.00000 1.00000 3.00000
+   vertex 29.00000 1.00000 5.00000
+   vertex 24.00000 1.00000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 29.00000 1.00000 3.00000
+   vertex 29.00000 7.00000 3.00000
+   vertex 29.00000 7.00000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 29.00000 1.00000 3.00000
+   vertex 29.00000 7.00000 5.00000
+   vertex 29.00000 1.00000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 29.00000 7.00000 3.00000
+   vertex 24.00000 7.00000 3.00000
+   vertex 24.00000 7.00000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 29.00000 7.00000 3.00000
+   vertex 24.00000 7.00000 5.00000
+   vertex 29.00000 7.00000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24.00000 7.00000 3.00000
+   vertex 24.00000 1.00000 3.00000
+   vertex 24.00000 1.00000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24.00000 7.00000 3.00000
+   vertex 24.00000 1.00000 5.00000
+   vertex 24.00000 7.00000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 2.00000 2.00000 3.00000
+   vertex 7.00000 6.00000 3.00000
+   vertex 7.00000 2.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 2.00000 2.00000 3.00000
+   vertex 2.00000 6.00000 3.00000
+   vertex 7.00000 6.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 2.00000 2.00000 7.00000
+   vertex 7.00000 2.00000 7.00000
+   vertex 7.00000 6.00000 7.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 2.00000 2.00000 7.00000
+   vertex 7.00000 6.00000 7.00000
+   vertex 2.00000 6.00000 7.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 2.00000 2.00000 3.00000
+   vertex 7.00000 2.00000 3.00000
+   vertex 7.00000 2.00000 7.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 2.00000 2.00000 3.00000
+   vertex 7.00000 2.00000 7.00000
+   vertex 2.00000 2.00000 7.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 7.00000 2.00000 3.00000
+   vertex 7.00000 6.00000 3.00000
+   vertex 7.00000 6.00000 7.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 7.00000 2.00000 3.00000
+   vertex 7.00000 6.00000 7.00000
+   vertex 7.00000 2.00000 7.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 7.00000 6.00000 3.00000
+   vertex 2.00000 6.00000 3.00000
+   vertex 2.00000 6.00000 7.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 7.00000 6.00000 3.00000
+   vertex 2.00000 6.00000 7.00000
+   vertex 7.00000 6.00000 7.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 2.00000 6.00000 3.00000
+   vertex 2.00000 2.00000 3.00000
+   vertex 2.00000 2.00000 7.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 2.00000 6.00000 3.00000
+   vertex 2.00000 2.00000 7.00000
+   vertex 2.00000 6.00000 7.00000
+  endloop
+ endfacet
+endsolid cable_clip_flex_test.stl

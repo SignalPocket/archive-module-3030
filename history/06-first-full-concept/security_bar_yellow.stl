@@ -1,0 +1,254 @@
+solid security_bar_yellow.stl
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 0
+   vertex 34 8 0
+   vertex 34 0 0
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 0
+   vertex 0 8 0
+   vertex 34 8 0
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 3
+   vertex 34 0 3
+   vertex 34 8 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 3
+   vertex 34 8 3
+   vertex 0 8 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 0
+   vertex 34 0 0
+   vertex 34 0 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 0 0
+   vertex 34 0 3
+   vertex 0 0 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34 0 0
+   vertex 34 8 0
+   vertex 34 8 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34 0 0
+   vertex 34 8 3
+   vertex 34 0 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34 8 0
+   vertex 0 8 0
+   vertex 0 8 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34 8 0
+   vertex 0 8 3
+   vertex 34 8 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 8 0
+   vertex 0 0 0
+   vertex 0 0 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0 8 0
+   vertex 0 0 3
+   vertex 0 8 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27 -1 0
+   vertex 34 9 0
+   vertex 34 -1 0
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27 -1 0
+   vertex 27 9 0
+   vertex 34 9 0
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27 -1 6
+   vertex 34 -1 6
+   vertex 34 9 6
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27 -1 6
+   vertex 34 9 6
+   vertex 27 9 6
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27 -1 0
+   vertex 34 -1 0
+   vertex 34 -1 6
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27 -1 0
+   vertex 34 -1 6
+   vertex 27 -1 6
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34 -1 0
+   vertex 34 9 0
+   vertex 34 9 6
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34 -1 0
+   vertex 34 9 6
+   vertex 34 -1 6
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34 9 0
+   vertex 27 9 0
+   vertex 27 9 6
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 34 9 0
+   vertex 27 9 6
+   vertex 34 9 6
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27 9 0
+   vertex 27 -1 0
+   vertex 27 -1 6
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 27 9 0
+   vertex 27 -1 6
+   vertex 27 9 6
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24 1 3
+   vertex 29 7 3
+   vertex 29 1 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24 1 3
+   vertex 24 7 3
+   vertex 29 7 3
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24 1 5
+   vertex 29 1 5
+   vertex 29 7 5
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24 1 5
+   vertex 29 7 5
+   vertex 24 7 5
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24 1 3
+   vertex 29 1 3
+   vertex 29 1 5
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24 1 3
+   vertex 29 1 5
+   vertex 24 1 5
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 29 1 3
+   vertex 29 7 3
+   vertex 29 7 5
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 29 1 3
+   vertex 29 7 5
+   vertex 29 1 5
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 29 7 3
+   vertex 24 7 3
+   vertex 24 7 5
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 29 7 3
+   vertex 24 7 5
+   vertex 29 7 5
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24 7 3
+   vertex 24 1 3
+   vertex 24 1 5
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 24 7 3
+   vertex 24 1 5
+   vertex 24 7 5
+  endloop
+ endfacet
+endsolid security_bar_yellow.stl

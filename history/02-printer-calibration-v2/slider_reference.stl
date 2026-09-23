@@ -1,0 +1,170 @@
+solid slider_reference.stl
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 0.00000
+   vertex 42.00000 15.00000 0.00000
+   vertex 42.00000 0.00000 0.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 0.00000
+   vertex 0.00000 15.00000 0.00000
+   vertex 42.00000 15.00000 0.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 3.00000
+   vertex 42.00000 0.00000 3.00000
+   vertex 42.00000 15.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 3.00000
+   vertex 42.00000 15.00000 3.00000
+   vertex 0.00000 15.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 0.00000
+   vertex 42.00000 0.00000 0.00000
+   vertex 42.00000 0.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 0.00000 0.00000
+   vertex 42.00000 0.00000 3.00000
+   vertex 0.00000 0.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 42.00000 0.00000 0.00000
+   vertex 42.00000 15.00000 0.00000
+   vertex 42.00000 15.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 42.00000 0.00000 0.00000
+   vertex 42.00000 15.00000 3.00000
+   vertex 42.00000 0.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 42.00000 15.00000 0.00000
+   vertex 0.00000 15.00000 0.00000
+   vertex 0.00000 15.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 42.00000 15.00000 0.00000
+   vertex 0.00000 15.00000 3.00000
+   vertex 42.00000 15.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 15.00000 0.00000
+   vertex 0.00000 0.00000 0.00000
+   vertex 0.00000 0.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 0.00000 15.00000 0.00000
+   vertex 0.00000 0.00000 3.00000
+   vertex 0.00000 15.00000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4.00000 4.50000 3.00000
+   vertex 38.00000 10.50000 3.00000
+   vertex 38.00000 4.50000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4.00000 4.50000 3.00000
+   vertex 4.00000 10.50000 3.00000
+   vertex 38.00000 10.50000 3.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4.00000 4.50000 5.00000
+   vertex 38.00000 4.50000 5.00000
+   vertex 38.00000 10.50000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4.00000 4.50000 5.00000
+   vertex 38.00000 10.50000 5.00000
+   vertex 4.00000 10.50000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4.00000 4.50000 3.00000
+   vertex 38.00000 4.50000 3.00000
+   vertex 38.00000 4.50000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4.00000 4.50000 3.00000
+   vertex 38.00000 4.50000 5.00000
+   vertex 4.00000 4.50000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 38.00000 4.50000 3.00000
+   vertex 38.00000 10.50000 3.00000
+   vertex 38.00000 10.50000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 38.00000 4.50000 3.00000
+   vertex 38.00000 10.50000 5.00000
+   vertex 38.00000 4.50000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 38.00000 10.50000 3.00000
+   vertex 4.00000 10.50000 3.00000
+   vertex 4.00000 10.50000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 38.00000 10.50000 3.00000
+   vertex 4.00000 10.50000 5.00000
+   vertex 38.00000 10.50000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4.00000 10.50000 3.00000
+   vertex 4.00000 4.50000 3.00000
+   vertex 4.00000 4.50000 5.00000
+  endloop
+ endfacet
+ facet normal 0 0 0
+  outer loop
+   vertex 4.00000 10.50000 3.00000
+   vertex 4.00000 4.50000 5.00000
+   vertex 4.00000 10.50000 5.00000
+  endloop
+ endfacet
+endsolid slider_reference.stl

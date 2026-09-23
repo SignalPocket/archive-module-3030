@@ -10,6 +10,8 @@ This version uses the tested dimensions and replaces the unreliable flex latch w
 - `docs/TRANSMISSION.txt` — final proposal transmission copy.
 - `docs/assembly-diagram.html` — interactive exploded, closed, and open assembly sketches.
 - `renders/assembly_preview.png` — assembled color preview.
+- `history/` — the complete sequence of calibration parts, prototypes, discarded mechanisms, early models, build scripts, renders, and original ZIP packages.
+- [`EVOLUTION.md`](EVOLUTION.md) — what changed at each stage and what the physical tests taught us.
 
 ## Visual construction
 
