@@ -24,7 +24,7 @@ drawer_l=126; drawer_w=W-2*wall-2*slide_clearance; drawer_h=19.5;
 lid_h=2; armor_h=2.4; timeline_h=1.2;
 magnet_d=6.10; magnet_depth=3.20;
 m2_clearance=2.30; m2_pilot=1.70;
-nodes=[[22,14],[52,14],[82,14],[112,14]];
+nodes=[[22,7.5],[52,7.5],[82,7.5],[112,7.5]];
 open_node=[141,46];
 
 module rounded_box(size,r=3){
@@ -46,7 +46,8 @@ module chassis(){
         rounded_box([L,W,chassis_h],3);
         translate([wall,wall,wall]) cube([L-wall+1,W-2*wall,chassis_h]);
       }
-      for(p=nodes) translate([p[0],p[1],23.6]) cylinder(d=8,h=7.4);
+      // These bosses overlap the full-height front wall and sit above the drawer.
+      for(p=nodes) translate([p[0],p[1],23.6]) cylinder(d=10,h=7.4);
       // Two rear retaining clips. Slide the top stack under these before
       // lowering the front edge onto the four event-screw bosses.
       for(x=[35,115]){
@@ -54,7 +55,7 @@ module chassis(){
         translate([x-6,85.5,35.7]) cube([12,6.5,.8]);
       }
       // Internal boss for the fixed magnet; attraction acts along drawer travel.
-      translate([14,W/2-7,7]) cube([10,14,12]);
+      translate([14,W/2-7,2.5]) cube([10,14,16.5]);
     }
     for(p=nodes) translate([p[0],p[1],28]) cylinder(d=m2_pilot,h=4);
     // Fixed magnet opens toward +X at the drawer's closed left end.
@@ -95,7 +96,7 @@ module drawer(){
 
 module armor(){
   difference(){
-    translate([5,6,0]) rounded_box([140,80,armor_h],3);
+    translate([5,4,0]) rounded_box([140,82,armor_h],3);
     for(p=nodes) translate([p[0],p[1],-1]) cylinder(d=m2_clearance,h=armor_h+2);
     // Registration recess for the separately colored black lettering.
     translate([0,0,armor_h-.25]) linear_extrude(.35) top_text_2d();
