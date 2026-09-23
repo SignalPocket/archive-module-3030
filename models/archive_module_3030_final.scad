@@ -47,6 +47,12 @@ module chassis(){
         translate([wall,wall,wall]) cube([L-wall+1,W-2*wall,chassis_h]);
       }
       for(p=nodes) translate([p[0],p[1],23.6]) cylinder(d=8,h=7.4);
+      // Two rear retaining clips. Slide the top stack under these before
+      // lowering the front edge onto the four event-screw bosses.
+      for(x=[35,115]){
+        translate([x-6,90,31]) cube([12,2,5.5]);
+        translate([x-6,85.5,35.7]) cube([12,6.5,.8]);
+      }
       // Internal boss for the fixed magnet; attraction acts along drawer travel.
       translate([14,W/2-7,7]) cube([10,14,12]);
     }
@@ -65,6 +71,8 @@ module lid(){
   difference(){
     rounded_box([L,W,lid_h],3);
     for(p=nodes) translate([p[0],p[1],-1]) cylinder(d=m2_clearance,h=lid_h+2);
+    // Clearance slots for the two chassis-mounted rear clip posts.
+    for(x=[35,115]) translate([x-6.2,89.8,-.1]) cube([12.4,2.3,lid_h+.2]);
   }
 }
 

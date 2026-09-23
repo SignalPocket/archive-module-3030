@@ -6,6 +6,7 @@ This version uses the tested dimensions and replaces the unreliable flex latch w
 
 ## Repository contents
 
+- `print-files/` — six separate plate-ready 3MF jobs; start here for Bambu Studio.
 - `models/` — editable OpenSCAD source, assembled reference 3MF, and individual printable STL parts.
 - `docs/TRANSMISSION.txt` — final proposal transmission copy.
 - `docs/assembly-diagram.html` — interactive exploded, closed, and open assembly sketches.
@@ -19,7 +20,8 @@ This version uses the tested dimensions and replaces the unreliable flex latch w
 
 - Black PLA chassis and top lid.
 - Iron-gray PLA drawer and armor plate.
-- Yellow PETG timeline overlay, secured by four exposed M2 × 8 mm screws.
+- Yellow PETG timeline overlay, secured by four exposed M2 × 8 mm event screws.
+- Two hidden black retaining clips capture the rear edge of the lid and armor.
 - Parameterized black PLA lettering printed directly into/on the iron-gray armor as an AMS multicolor part.
 - Each screw marks a completed archival event: 05.14.2023, 05.28.2023, 10.12.2023, and 08.29.2026.
 - The open yellow ring nearest the drawer represents 09.26.2026: a record awaiting its response.
@@ -36,12 +38,14 @@ This version uses the tested dimensions and replaces the unreliable flex latch w
 
 Do not begin with the large chassis.
 
+Use the numbered jobs in `print-files/`. The combined 3MF under `models/` is an assembled reference and is not intended to be sliced as one plate.
+
 1. Print `models/drawer_gray.stl` and verify that the magnet seats in its pocket without force.
 2. Print `models/chassis_black.stl`. Before adding adhesive, slide the empty drawer through its full travel.
 3. Install the two magnets only after checking their attraction direction. Use a tiny amount of thick CA or two-part epoxy.
 4. Print `models/lid_black.stl`, `models/armor_gray.stl`, and `models/timeline_yellow.stl`.
 5. For the armor, import `models/armor_gray.stl` and `models/top_text_black.stl` together as one object with multiple parts. Assign iron-gray PLA to the armor and black PLA to the text. The meshes are already aligned; do not auto-arrange them separately.
-6. Stack lid → armor → yellow timeline. Insert the four M2 × 8 mm screws through the completed-event nodes and tighten only until seated. PETG can deform if overtightened.
+6. Stack lid → armor → yellow timeline. Angle the stack slightly, tuck its rear edge beneath both black retaining clips, then lower the front edge. Install four M2 × 8 mm screws through the completed-event nodes. Tighten only until seated; PETG can deform if overtightened.
 7. Print `models/reveal_red.stl`, check its reading orientation, and install it in the drawer.
 8. Add the folded transmission last.
 
