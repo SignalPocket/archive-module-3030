@@ -87,3 +87,19 @@ The four fastened nodes represent 05.14.2023, 05.28.2023, 10.12.2023, and 08.29.
 - `history/00-original-packages/` preserves the ZIP bundles exactly as delivered.
 - `history/supporting-work/` preserves generation/export helpers used during development.
 - The clean current production files remain in the repository's top-level `models/`, `docs/`, and `renders/` folders.
+
+## 08 — Approved model revision
+
+Folder: `history/08-approved-model-v2/`
+
+The approved revision adds:
+
+- Parameterized stretched retro-futurist title lettering
+- Black PLA title geometry aligned for direct AMS printing on the iron-gray armor
+- Year-over-day archive codes engraved around each yellow event circle
+- Full-height drawer end cap so no red is visible while closed
+- Widened concealed underside grip with five traction grooves
+- Magnet pockets facing along the drawer's direction of travel
+- LEGO-style assembly guide and final closed/reveal sketch
+
+This stage is the approved basis for the first full-size physical print.

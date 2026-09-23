@@ -1,7 +1,21 @@
 // ARCHIVE MODULE 3030 — production candidate, 2026-09-23
 // Original retro-future archive design. Units: millimeters.
-PART = "assembly"; // chassis, lid, drawer, armor, timeline, reveal, assembly
+PART = "assembly"; // chassis, lid, drawer, armor, top_text, timeline, reveal, assembly
 $fn = 64;
+
+// EDITABLE EXTERIOR LETTERING
+TITLE_TEXT = "ARCHIVE MODULE 3030";
+STATUS_TEXT = "MEMORY PRESERVED // TIMELINE ACTIVE";
+TITLE_SIZE = 9;
+STATUS_SIZE = 3.2;
+TITLE_WIDTH = 116; // fixed cinematic width; editable with the wording
+TITLE_FONT = "Agency FB:style=Bold";
+STATUS_FONT = "Bahnschrift:style=SemiBold";
+EVENT_YEARS = ["23", "23", "23", "26"];
+EVENT_DAYS = ["134", "148", "285", "241"];
+OPEN_EVENT_YEAR = "26";
+OPEN_EVENT_DAY = "269";
+CODE_FONT = "Liberation Sans:style=Bold";
 
 L=150; W=92; chassis_h=31; wall=3;
 slide_clearance=0.15;
@@ -16,6 +30,14 @@ module rounded_box(size,r=3){
   hull() for(x=[r,size[0]-r],y=[r,size[1]-r]) translate([x,y,0]) cylinder(r=r,h=size[2]);
 }
 
+module top_text_2d(){
+  translate([75,57])
+    resize([TITLE_WIDTH,0],auto=[false,true])
+      text(TITLE_TEXT,size=TITLE_SIZE,font=TITLE_FONT,spacing=1.04,halign="center",valign="center");
+  translate([75,46])
+    text(STATUS_TEXT,size=STATUS_SIZE,font=STATUS_FONT,spacing=1.02,halign="center",valign="center");
+}
+
 module chassis(){
   difference(){
     union(){
@@ -24,11 +46,17 @@ module chassis(){
         translate([wall,wall,wall]) cube([L-wall+1,W-2*wall,chassis_h]);
       }
       for(p=nodes) translate([p[0],p[1],23.6]) cylinder(d=8,h=7.4);
-      translate([134,-0.8,8]) cube([14,3.8,10]);
+      // Internal boss for the fixed magnet; attraction acts along drawer travel.
+      translate([14,W/2-7,7]) cube([10,14,12]);
     }
     for(p=nodes) translate([p[0],p[1],28]) cylinder(d=m2_pilot,h=4);
-    translate([141,wall,13]) rotate([90,0,0]) cylinder(d=magnet_d,h=magnet_depth);
-    translate([L-15,W/2,-0.1]) scale([1,1,.45]) cylinder(r=12,h=7);
+    // Fixed magnet opens toward +X at the drawer's closed left end.
+    translate([23.9,W/2,13]) rotate([0,-90,0]) cylinder(d=magnet_d,h=magnet_depth);
+    // Wide concealed finger window underneath the drawer.
+    hull(){
+      translate([L-27,W/2,-0.1]) scale([1,1,.45]) cylinder(r=13,h=7);
+      translate([L-12,W/2,-0.1]) scale([1,1,.45]) cylinder(r=13,h=7);
+    }
   }
 }
 
@@ -46,11 +74,13 @@ module drawer(){
       cube([drawer_l,3,drawer_h]);
       translate([0,drawer_w-3,0]) cube([drawer_l,3,drawer_h]);
       cube([3,drawer_w,drawer_h]);
-      translate([drawer_l-3,0,0]) cube([3,drawer_w,drawer_h]);
-      translate([110,3,7]) cube([14,.8,10]);
+      // Full-height flush end cap conceals the red plate when closed.
+      translate([drawer_l-3,0,0]) cube([3,drawer_w,chassis_h-wall-.3]);
     }
-    translate([117,0,12]) rotate([-90,0,0]) cylinder(d=magnet_d,h=magnet_depth);
-    translate([drawer_l-1,drawer_w/2,4]) rotate([0,90,0]) cylinder(r=8,h=4);
+    // Moving magnet opens toward -X and faces the fixed chassis magnet.
+    translate([.1,drawer_w/2,12]) rotate([0,90,0]) cylinder(d=magnet_d,h=magnet_depth);
+    // Five shallow underside grip grooves, reached through the chassis window.
+    for(x=[101:4:121]) translate([x,drawer_w/2-14,-.1]) cube([1.6,28,.9]);
   }
 }
 
@@ -58,11 +88,14 @@ module armor(){
   difference(){
     translate([5,6,0]) rounded_box([140,80,armor_h],3);
     for(p=nodes) translate([p[0],p[1],-1]) cylinder(d=m2_clearance,h=armor_h+2);
+    // Registration recess for the separately colored black lettering.
+    translate([0,0,armor_h-.25]) linear_extrude(.35) top_text_2d();
   }
-  translate([75,57,armor_h]) linear_extrude(.7)
-    text("ARCHIVE MODULE 3030",size=7,font="Liberation Sans:style=Bold",halign="center",valign="center");
-  translate([75,46,armor_h]) linear_extrude(.6)
-    text("MEMORY PRESERVED // TIMELINE ACTIVE",size=3.2,font="Liberation Sans:style=Bold",halign="center",valign="center");
+}
+
+module top_text(){
+  // 0.25 mm registers into the armor; 0.60 mm remains visibly raised.
+  translate([0,0,armor_h-.25]) linear_extrude(.85) top_text_2d();
 }
 
 module line_between(a,b,w=6,h=timeline_h){
@@ -72,16 +105,36 @@ module line_between(a,b,w=6,h=timeline_h){
   }
 }
 
+module code_tab(center,size=[21,7]){
+  translate([center[0]-size[0]/2,center[1]-size[1]/2,0]) rounded_box([size[0],size[1],timeline_h],2);
+}
+
+module arc_code(year,day,center,r=4.7,size=1.45){
+  // Two-digit year follows the upper arc.
+  for(i=[0:1]) let(a=105-i*30)
+    translate([center[0]+r*cos(a),center[1]+r*sin(a),timeline_h-.60])
+      rotate([0,0,a-90]) linear_extrude(.70)
+        text(year[i],size=size,font=CODE_FONT,halign="center",valign="center");
+  // Three-digit ordinal day follows the lower arc, left to right.
+  for(i=[0:2]) let(a=225+i*45)
+    translate([center[0]+r*cos(a),center[1]+r*sin(a),timeline_h-.60])
+      rotate([0,0,a+90]) linear_extrude(.70)
+        text(day[i],size=size,font=CODE_FONT,halign="center",valign="center");
+}
+
 module timeline(){
   difference(){
     union(){
       for(i=[0:2]) line_between(nodes[i],nodes[i+1],6);
       line_between(nodes[3],open_node,6);
-      for(p=nodes) translate([p[0],p[1],0]) cylinder(d=12,h=timeline_h);
-      translate(open_node) cylinder(d=15,h=timeline_h);
+      for(p=nodes) translate([p[0],p[1],0]) cylinder(d=14,h=timeline_h);
+      translate(open_node) cylinder(d=18,h=timeline_h);
     }
     for(p=nodes) translate([p[0],p[1],-1]) cylinder(d=m2_clearance,h=timeline_h+2);
     translate([open_node[0],open_node[1],-1]) cylinder(d=8,h=timeline_h+2);
+    // Each event circle is a tiny dial: year above, ordinal day below.
+    for(i=[0:3]) arc_code(EVENT_YEARS[i],EVENT_DAYS[i],nodes[i]);
+    arc_code(OPEN_EVENT_YEAR,OPEN_EVENT_DAY,open_node,r=6.4,size=1.55);
   }
 }
 
@@ -99,12 +152,14 @@ if(PART=="chassis") chassis();
 else if(PART=="lid") lid();
 else if(PART=="drawer") drawer();
 else if(PART=="armor") armor();
+else if(PART=="top_text") top_text();
 else if(PART=="timeline") timeline();
 else if(PART=="reveal") reveal();
 else {
   color("#17191c") chassis();
   color("#17191c") translate([0,0,chassis_h]) lid();
   color("#73777b") translate([0,0,chassis_h+lid_h]) armor();
+  color("#111214") translate([0,0,chassis_h+lid_h]) top_text();
   color("#f2c300") translate([0,0,chassis_h+lid_h+armor_h]) timeline();
   color("#73777b") translate([24,3.15,3.15]) drawer();
   color("#a71930") translate([32,10,6.2]) reveal();
