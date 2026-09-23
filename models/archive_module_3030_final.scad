@@ -1,6 +1,7 @@
 // ARCHIVE MODULE 3030 — production candidate, 2026-09-23
 // Original retro-future archive design. Units: millimeters.
 PART = "assembly"; // chassis, lid, drawer, armor, top_text, timeline, reveal, assembly
+DRAWER_OPEN = 0; // assembly preview only: 0 closed, 85 open
 $fn = 64;
 
 // EDITABLE EXTERIOR LETTERING
@@ -161,6 +162,6 @@ else {
   color("#73777b") translate([0,0,chassis_h+lid_h]) armor();
   color("#111214") translate([0,0,chassis_h+lid_h]) top_text();
   color("#f2c300") translate([0,0,chassis_h+lid_h+armor_h]) timeline();
-  color("#73777b") translate([24,3.15,3.15]) drawer();
-  color("#a71930") translate([32,10,6.2]) reveal();
+  color("#73777b") translate([24+DRAWER_OPEN,3.15,3.15]) drawer();
+  color("#a71930") translate([32+DRAWER_OPEN,10,6.2]) reveal();
 }

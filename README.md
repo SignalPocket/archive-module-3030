@@ -10,7 +10,7 @@ This version uses the tested dimensions and replaces the unreliable flex latch w
 - `docs/TRANSMISSION.txt` — final proposal transmission copy.
 - `docs/assembly-diagram.html` — interactive exploded, closed, and open assembly sketches.
 - `docs/lego-style-assembly-guide.svg` — numbered four-step hardware and layer assembly guide.
-- `docs/final-assembled-sketch.svg` — closed module plus drawer-reveal reference sketch.
+- `renders/final-assembly-diagram.png` — accurate closed/reveal comparison rendered directly from the approved SCAD geometry.
 - `renders/assembly_preview.png` — assembled color preview.
 - `history/` — the complete sequence of calibration parts, prototypes, discarded mechanisms, early models, build scripts, renders, and original ZIP packages.
 - [`EVOLUTION.md`](EVOLUTION.md) — what changed at each stage and what the physical tests taught us.
