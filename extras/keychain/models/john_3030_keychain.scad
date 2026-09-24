@@ -26,7 +26,7 @@ module face_outline_2d(clearance=0){
 module lettering_2d(){
   translate([42.5,20]) resize([43,0],auto=[false,true])
     text(NAME_TEXT,size=7.2,font=TITLE_FONT,spacing=1.04,halign="center",valign="center");
-  translate([42.5,15.1])
+  translate([42.5,14.5])
     text(STATUS_TEXT,size=2.45,font=STATUS_FONT,spacing=1.02,halign="center",valign="center");
 }
 
