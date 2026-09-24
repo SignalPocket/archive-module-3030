@@ -9,10 +9,18 @@ An original retro-futurist companion piece for the Archive Module. It evokes the
 
 ## Print jobs
 
-- `01_keychain_black_gray_red_ams.3mf` — one fused AMS PLA body: black base, iron-gray face, black lettering, and red heart
+- `01_keychain_black_gray_red_ams.3mf` — native Bambu Studio project for one fused AMS PLA body: black base, iron-gray face, black lettering, and red heart
 - `02_signal_yellow_petg.3mf` — separate Yellow PETG HF signal-line insert
 
 The base and face are printed together and permanently fuse during the AMS job. The yellow insert is mechanically fitted into the gray face rather than printed against PLA.
+
+The Bambu project contains three filament assignments:
+
+1. Black PLA — base and lettering
+2. Iron Gray Metallic PLA — face
+3. Red PLA — heart
+
+If the AMS trays are in a different physical order, remap those three project filaments to the matching loaded spools when Bambu Studio prompts you. The yellow PETG file is a separate, single-material print.
 
 ## Editable wording
 
