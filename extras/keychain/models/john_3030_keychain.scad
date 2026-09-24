@@ -3,7 +3,7 @@
 PART = "assembly"; // base, face, text, signal, red_indicator, assembly
 $fn = 64;
 
-NAME_TEXT = "3030 // JOHN";
+NAME_TEXT = "3030 // J&K";
 STATUS_TEXT = "POSITIVE CONTACT";
 TITLE_FONT = "Agency FB:style=Bold";
 STATUS_FONT = "Bahnschrift:style=SemiBold";
@@ -35,6 +35,14 @@ module signal_2d(extra=0){
   hull(){ translate([43,8.5]) circle(d=5.6+2*extra); translate([62,8.5]) circle(d=5.6+2*extra); }
 }
 
+module heart_2d(size=3.3){
+  scale([size/4.3,size/4.3]) union(){
+    translate([-1,0.55]) circle(r=1.15);
+    translate([1,0.55]) circle(r=1.15);
+    polygon([[-2.1,.55],[2.1,.55],[0,-2.25]]);
+  }
+}
+
 module base(){
   difference(){
     union(){
@@ -52,7 +60,8 @@ module face(){
     translate([face_pos[0],face_pos[1],base_h-face_h]) rounded_box([face_size[0],face_size[1],face_h],2);
     translate([0,0,base_h-.42]) linear_extrude(.5) lettering_2d();
     translate([0,0,base_h-face_h-.1]) linear_extrude(face_h+.2) signal_2d(fit_clearance);
-    translate([64,23,base_h-face_h-.1]) cylinder(d=3.3,h=face_h+.2);
+    translate([65.4,23.1,base_h-face_h-.1]) linear_extrude(face_h+.2)
+      offset(r=fit_clearance) heart_2d();
   }
 }
 
@@ -68,7 +77,7 @@ module signal(){
 }
 
 module red_indicator(){
-  translate([64,23,base_h-face_h]) cylinder(d=3.0,h=face_h);
+  translate([65.4,23.1,base_h-face_h]) linear_extrude(face_h) heart_2d();
 }
 
 if(PART=="base") base();

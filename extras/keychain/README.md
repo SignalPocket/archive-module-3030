@@ -1,4 +1,4 @@
-# JOHN 3030 keychain
+# J&amp;K 3030 keychain
 
 An original retro-futurist companion piece for the Archive Module. It evokes the geometric, stretched-type atmosphere discussed for the project without reproducing protected album artwork.
 
@@ -10,7 +10,7 @@ An original retro-futurist companion piece for the Archive Module. It evokes the
 ## Parts
 
 - Black PLA base
-- One AMS face job: iron-gray PLA face, black PLA lettering, and red PLA indicator
+- One AMS face job: iron-gray PLA face, black PLA lettering, and a red PLA heart
 - Separate yellow PETG HF signal-line insert
 
 The yellow insert is mechanically fitted into the gray face rather than printed against PLA.
