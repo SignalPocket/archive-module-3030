@@ -5,6 +5,8 @@ from xml.sax.saxutils import escape
 root = Path(__file__).resolve().parent
 models = root / "models"
 output = root / "print-files"
+for old_job in output.glob("*.3mf"):
+    old_job.unlink()
 
 
 def read_stl(path):
@@ -47,10 +49,10 @@ def write_job(filename, title, parts):
     print(output / filename)
 
 
-write_job("01_base_black.3mf", "JOHN 3030 — Black Base", [("base_black.stl", "Base — Black PLA", "17191C")])
-write_job("02_face_gray_black_red_ams.3mf", "JOHN 3030 — AMS Face", [
+write_job("01_keychain_black_gray_red_ams.3mf", "J&K 3030 — Fused AMS Body", [
+    ("base_black.stl", "Base — Black PLA", "17191C"),
     ("face_gray.stl", "Face — Iron Gray PLA", "73777B"),
     ("text_black.stl", "Lettering — Black PLA", "111214"),
-    ("indicator_red.stl", "Indicator — Red PLA", "A71930"),
+    ("indicator_red.stl", "Heart — Red PLA", "A71930"),
 ])
-write_job("03_signal_yellow_petg.3mf", "JOHN 3030 — Yellow Signal", [("signal_yellow_petg.stl", "Signal — Yellow PETG", "F2C300")])
+write_job("02_signal_yellow_petg.3mf", "J&K 3030 — Yellow Signal", [("signal_yellow_petg.stl", "Signal — Yellow PETG", "F2C300")])
